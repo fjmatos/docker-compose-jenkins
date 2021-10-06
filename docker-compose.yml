@@ -3,7 +3,7 @@ version: '2'
 services:
    jenkins:
     image: 'h1kkan/jenkins-docker:2.303.1'
-    container_name: ydl-jenkins
+    container_name: container-jenkins
     build:
       context: jenkins/
     user: root
@@ -21,7 +21,7 @@ services:
 
    nexus:
      image: sonatype/nexus3:3.28.1
-     container_name: ydl-nexus
+     container_name: container-nexus
      ports:
        - '8082:8081'
        - '8083:8083'
