@@ -15,8 +15,7 @@ services:
       - '/var/data/jenkins-data:/var/jenkins_home'
     environment:
       - JENKINS_OPTS="--httpPort=8282"
-      - JAVA_OPTS="-Duser.timezone=Europe/Madrid -Djava.awt.headless=true -Dhudson.model.DirectoryBrowserSupport.CSP=\'default-src "self" "unsafe-inline" "unsafe-eval"; img-src
-"self" "unsafe-inline" data:; style-src "unsafe-inline";\'"
+      - JAVA_OPTS="-Duser.timezone=Europe/Madrid -Djava.awt.headless=true -Dhudson.model.DirectoryBrowserSupport.CSP=\'default-src "self" "unsafe-inline" "unsafe-eval"; img-src "self" "unsafe-inline" data:; style-src "unsafe-inline";\'"
       - PIP_CONFIG_FILE=/var/jenkins_home/.pip/pip.conf
     restart: always
 
