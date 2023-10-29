@@ -1,6 +1,6 @@
 FROM h1kkan/jenkins-docker:2.303.1
 
-LABEL Owner="xabier.matos@gmail.com"
+LABEL Owner="jms@gmail.com"
 
 # if we want to install via apt
 
